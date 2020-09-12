@@ -9,31 +9,74 @@
 
 <body>
     <main>
-        <form id="formation" action="https://kevmccall.github.io/Forms-And-Tables/" method="get">
-            <h2>Now Hiring!</h2>
-            <!--H2 that introduces your form-->
-            <label for="name">Enter Your Name:</label>
-            <input type="text" id="name" placeholder="Name">
-            <br><br>
-            <label for="email">Enter Your Email:</label>
-            <input type="email" id="email" placeholder="Email">
-            <br><br>
-            <label for="password">Enter Your Phone Number:</label>
-            <input type="tel" id="tel" placeholder="Password">
-            <br><br>
-            <label for="tel">Enter your Phone Number:</label>
-            <input type="tel" id="telephone" placeholder="telephone">
-            <br><br>
-            <h2>Requirements</h2>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox">Flexible</label>
-            <br><br>
-            <input type="submit">
+        <div class="container">
+            <form id="contact" action="link goes here" method="get">
+                <h3>Your basic info</h3>
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name" tabindex="1" required autofocus>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" tabindex="2" required>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" tabindex="3" required>
+                </fieldset>
+                <br><br>
+                <h2>Age:</h2>
+                <fieldset>
+                    <input type="radio" id="under16" tabindex="4" required>
+                    <label for="checkbox">Under 16</label>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <input type="radio" id="16orolder" tabindex="5" required>
+                    <label for="checkbox">16 or Older</label>
+                </fieldset>
+                <br><br>
+                <h3>Your profile</h3>
+                <br>
+                <h4>Biography</h4>
+                <fieldset>
+                    <textarea tabindex="6" required></textarea>
+                </fieldset>
+                <br><br>
+                <h4>Select Courses</h4>
+                <fieldset>
+                    <select id="courses" name="courses">
+                        <option value="interests" placeholder="Computer Science Engineering"></option>
+                    </select>
+                </fieldset>
+                <br>
+                <h3>Interests:</h3>
+                <fieldset>
+                    <input type="checkbox" id="engineering" required>
+                    <label for="password">Engineering</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <input type="checkbox" id="business" required>
+                    <label for="password">Business</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <input type="checkbox" id="law" required>
+                    <label for="password">Law</label>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="Sending">Submit</button>
+                </fieldset>
 
-          
 
 
-        </form>
+
+
+            </form>
+        </div>
     </main>
 </body>
 
