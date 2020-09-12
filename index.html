@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact</title>
 </head>
 
 <body>
     <main>
         <div class="container">
-            <form id="contact" action="link goes here" method="get">
-                <h3>Your basic info</h3>
+            <form id="contact" action="" method="get">
+                <h2>Your basic info</h2>
                 <fieldset>
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name" tabindex="1" required autofocus>
+                    <input type="text" id="name" tabindex="1" required autofocus>
                 </fieldset>
                 <br><br>
                 <fieldset>
@@ -27,7 +28,7 @@
                     <input type="password" id="password" tabindex="3" required>
                 </fieldset>
                 <br><br>
-                <h2>Age:</h2>
+                <h4>Age:</h4>
                 <fieldset>
                     <input type="radio" id="under16" tabindex="4" required>
                     <label for="checkbox">Under 16</label>
@@ -38,9 +39,9 @@
                     <label for="checkbox">16 or Older</label>
                 </fieldset>
                 <br><br>
-                <h3>Your profile</h3>
+                <h2>Your profile</h2>
                 <br>
-                <h4>Biography</h4>
+                <h3>Biography</h3>
                 <fieldset>
                     <textarea tabindex="6" required></textarea>
                 </fieldset>
@@ -52,7 +53,7 @@
                     </select>
                 </fieldset>
                 <br>
-                <h3>Interests:</h3>
+                <h4>Interests:</h4>
                 <fieldset>
                     <input type="checkbox" id="engineering" required>
                     <label for="password">Engineering</label>
@@ -67,14 +68,10 @@
                     <input type="checkbox" id="law" required>
                     <label for="password">Law</label>
                 </fieldset>
+                <br>
                 <fieldset>
                     <button name="submit" type="submit" id="contact-submit" data-submit="Sending">Submit</button>
                 </fieldset>
-
-
-
-
-
             </form>
         </div>
     </main>
