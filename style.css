@@ -109,3 +109,34 @@ input[type=password] {
     width: 100%;
     padding: 6px;
 }
+
+li {
+	color: #FFFFFF;
+}
+ul#menu li {
+	display:inline;
+}
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #A9A9A9;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover {
+	background-color: #FF0000;
+	color: #000000;
+}
+.topnav a.active {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
