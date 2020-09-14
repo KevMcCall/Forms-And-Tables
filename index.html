@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="formsubmit.js"></script>
     <title>Contact</title>
 </head>
 
 <body>
     <main>
         <div class="container">
-            <form id="contact" action="https://kevmccall.github.io/Forms-And-Tables/index.html" method="GET" autocomplete="on"
-                target="_self">
+            <form id="contact" action="https://kevmccall.github.io/Forms-And-Tables/index.html" method="GET" autocomplete="on" target="_self">
                 <h2>Your basic info</h2>
                 <fieldset>
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" tabindex="1" required autofocus>
+                    <input type="text" id="name" name="name" tabindex="1" required autofocus>
                 </fieldset>
                 <fieldset>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" tabindex="2" required>
+                    <input type="email" id="email" name="email" tabindex="2" required>
                 </fieldset>
                 <fieldset>
                     <label for="password">Password</label><br>
-                    <input type="password" id="password" tabindex="3" required>
+                    <input type="password" id="password" name="password" tabindex="3" required>
                 </fieldset>
                 <h4>Age:</h4>
                 <fieldset>
-                    <input type="radio" id="under16" tabindex="4" required>
+                    <input type="radio" id="under16" name="age" value="under16" tabindex="4" required>
                     <label for="checkbox">Under 16</label>
-                    <br>
-                    <input type="radio" id="16orolder" tabindex="5" required>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" id="16orolder" name="age" value="16orolder" tabindex="5" required>
                     <label for="checkbox">16 or Older</label>
                 </fieldset>
                 <br>
@@ -39,31 +40,32 @@
 
                 <h3>Biography</h3>
                 <fieldset>
-                    <textarea tabindex="6" required></textarea>
+                    <textarea tabindex="6"name="text" required></textarea>
                 </fieldset>
                 <h4>Select Courses</h4>
                 <fieldset>
                     <select id="courses" name="courses">
-                        <option value="interests" disabled selected>Computer Science Engineering</option>
+                        <option value="computersceienceengineering" name="computerscienceengineering">Computer Science Engineering</option>
                     </select>
                 </fieldset>
 
                 <h4>Interests:</h4>
                 <fieldset>
-                    <input type="checkbox" id="engineering">
-                    <label for="checkbox">Engineering</label>
+                    <input type="checkbox" name="engineering" id="engineering">
+                    <label for="engineering">Engineering</label>
                 </fieldset>
                 <fieldset>
-                    <input type="checkbox" id="business">
-                    <label for="checkbox">Business</label>
+                    <input type="checkbox" name="business" id="business">
+                    <label for="business">Business</label>
                 </fieldset>
                 <fieldset>
-                    <input type="checkbox" id="law">
-                    <label for="checkbox">Law</label>
+                    <input type="checkbox" name="law" id="law">
+                    <label for="law">Law</label>
                 </fieldset>
                 <br>
                 <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="Sending">Submit</button>
+                    <button name="submit" type="submit" formmethod="GET">Submit</button>
+                    
                 </fieldset>
             </form>
         </div>
