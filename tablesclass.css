@@ -35,7 +35,7 @@ body {
 }
 
 table, td, th {
-    border: 5px solid rgba(255, 255, 255, 0.966);
+    border: 5px solid rgba(206, 25, 25, 0.966);
     border-collapse: collapse;
     padding: 15px;
     text-align: justify;
@@ -44,8 +44,7 @@ table, td, th {
 }
 
 table {
-	color: whitesmoke;
-	
+    color: whitesmoke;
 }
 
 h2.tableheader {
@@ -58,6 +57,4 @@ h2.tableheader {
     margin-right: auto;
 }
 
-caption {
-	font-weight: bold;
-}
+
